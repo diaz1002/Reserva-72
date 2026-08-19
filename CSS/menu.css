@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #4d4d4d;
+}
+
+#logoheader{
+    width: 150px;
+    height: 150px;
+
+}
+
+.menu{
+    font-size: 40px;
+    text-decoration: none;
+    color: #FAAA00;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.menu-toggle span{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #FAAA00;
+    border-radius: 2px;
+}
+
+#cajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#cajas .item {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    border: solid;
+
+}
+
+.item img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 30px;
+}
+
+.item button {
+    color: #ffffff;
+    background-color: #FAAA00;
+    margin-top: 30px;
+}
+#footer{
+    background-color: black;
+    width: 100%;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+}
+
+.f1{
+    width: 33.3%;
+    border: solid 1px white;
+}
+
+#logofooter{
+    width: 300px;
+    height: 300px;
+}
+
+.f2{
+    width: 33.3%;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+}
+
+.textf{
+    color: white;
+}
+
+.f3{
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 1024px) {
+    #logoheader{
+        width: 110px;
+        height: 110px;
+    }
+    #cajas .item{
+        width: 320px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        justify-content: space-between;
+        padding: 15px 20px;
+        position: relative;
+    }
+    #logoheader{
+        width: 90px;
+        height: 90px;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 10;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .menu{
+        font-size: 20px;
+        padding: 12px 0;
+        justify-content: center;
+    }
+    #cajas .item{
+        width: 90%;
+        height: auto;
+        max-width: 340px;
+    }
+    .item img{
+        height: 220px;
+    }
+    #footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .f1, .f2, .f3{
+        width: 100%;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .textf{
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logoheader{
+        width: 70px;
+        height: 70px;
+    }
+    #cajas .item{
+        width: 95%;
+    }
+    .item img{
+        height: 180px;
+    }
+}

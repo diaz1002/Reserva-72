@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="header">
+                <img id="logoheader" src="/img/logo.png" alt="">
+                <button class="menu-toggle" type="button" aria-label="Menú">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <div class="nav-links">
+                    <a href="/index.html" class="menu"><i></i> Inicio</a>
+                    <a href="/menu.html" class="menu"><i></i> Menú</a>
+                    <a href="/reservaciones.html" class="menu"><i></i> Reservaciones</a>
+                    <a href="/sobren.html" class="menu"><i></i> Información</a>
+                    <a href="/login.html" class="menu"><i></i> Registro</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="registro">
+            <h3 style="text-align: center; font-size: 35px;">Registro de usuario</h3>
+            <form action="" method="post">
+                <label for="documento">Documento:</label>
+                <input type="text" name="documento" id="" required placeholder="Ingrese su Documento...">
+                <br> <br>
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" name="nombre" id="" required placeholder="Ingrese su Nombre...">
+                <br><br>
+                <label for="correo">Correo Electronico:</label>
+                <input type="email" name="correo" id="" required placeholder="Ingrese su Correo...">
+                <br><br>
+                <label for="fechareser">Fecha de reservación:</label>
+                <input type="date" name="fechareser" id="" required>
+                <br><br>
+                <input type="checkbox" name="condiciones" id="" required>Acepto terminos y condiciones
+                <hr>
+                <button type="submit" name="enviar">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+    </div>
+    <footer>
+        <hr>
+        <div id="footer">
+            <div class="f1">
+                <img id="logofooter" src="/img/logo.png" alt="">
+            </div>
+            <div class="f2">
+                <p class="textf">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Quibusdam corporis sequi perspiciatis molestias enim nulla, eos obcaecati ipsa <br> corrupti velit nemo pariatur vero, ratione, autem  <br>  saepe libero rem. Debitis, voluptatem?
+                </p>
+            </div>
+            <div class="f3">
+                <a href=""><i class="fa fa-whatsapp" style="font-size: 40px; color: #FAAA00; margin: 10px;"></i></a>
+                <a href=""><i class="fa fa-facebook" style="font-size: 40px; color: #FAAA00; margin: 10px;"></i></a>
+                <a href=""><i class="fa fa-instagram" style="font-size: 40px; color: #FAAA00; margin: 10px;"></i></a>
+                <a href=""><i class="fa fa-youtube" style="font-size: 40px; color: #FAAA00; margin: 10px;"></i></a>
+            </div>
+        </div>
+        <div>
+            <p class="derechos">Derechos reservados &copy; Creado por Jhonatan Diaz - 2026</p>
+        </div>
+        <hr>
+        
+     </footer>
+
+</body>
+</html>

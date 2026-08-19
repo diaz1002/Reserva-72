@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #4d4d4d;
+}
+
+#logoheader {
+    width: 150px;
+    height: 150px;
+
+}
+
+.menu {
+    font-size: 40px;
+    text-decoration: none;
+    color: #FAAA00;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 20px;
+}
+
+.menu-toggle span{
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #FAAA00;
+    border-radius: 2px;
+}
+
+
+#ccarne {
+    width: 90%;
+    height: 900px;
+    background-color: #333;
+    margin: 5%;
+    position: relative;
+}
+
+.carne1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.text1 {
+    position: absolute;
+    color: white;
+    top: 40%;
+    left: 16%;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#cajas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #FAAA00;
+}
+
+#cajas .item {
+    text-align: center;
+    width: 400px;
+    height: 550px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    padding: 15px;
+    border: solid;
+
+}
+
+.item img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 30px;
+}
+
+.item button {
+    color: #ffffff;
+    background-color: #FAAA00;
+    margin-top: 30px;
+}
+
+#cajas2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.resepcion {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 40px;
+    left: 60%;
+}
+
+.eventos {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 40px;
+    left: 15%;
+}
+
+#footer {
+    background-color: black;
+    width: 100%;
+    height: 310px;
+    display: flex;
+    flex-direction: row;
+}
+
+.f1 {
+    width: 33.3%;
+    border: solid 1px white;
+}
+
+#logofooter {
+    width: 300px;
+    height: 300px;
+}
+
+.f2 {
+    width: 33.3%;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+}
+
+.textf {
+    color: white;
+}
+
+.f3 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 1024px) {
+    #logoheader{
+        width: 110px;
+        height: 110px;
+    }
+    #ccarne{
+        height: 700px;
+    }
+    .text1{
+        font-size: medium;
+        left: 8%;
+        width: 84%;
+    }
+    #cajas .item{
+        width: 320px;
+        height: 500px;
+    }
+    #cajas2{
+        height: 900px;
+    }
+    .resepcion, .eventos{
+        width: 320px;
+        height: 320px;
+    }
+    .resepcion{
+        left: 55%;
+    }
+    .eventos{
+        left: 8%;
+        top: 380px;
+    }
+    #footer{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .f1, .f2{
+        width: 50%;
+        justify-content: center;
+    }
+    .f3{
+        width: 100%;
+        justify-content: center;
+    }
+    #logofooter{
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header{
+        justify-content: space-between;
+        padding: 15px 20px;
+        position: relative;
+    }
+    #logoheader{
+        width: 90px;
+        height: 90px;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+    .nav-links{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 10;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    .menu{
+        font-size: 20px;
+        padding: 12px 0;
+        justify-content: center;
+    }
+    #ccarne{
+        width: 92%;
+        height: 500px;
+        margin: 20px auto;
+    }
+    .text1{
+        font-size: small;
+        left: 5%;
+        width: 90%;
+        top: 30%;
+    }
+    .text2{
+        font-size: 30px;
+    }
+    #cajas .item{
+        width: 90%;
+        height: auto;
+        max-width: 340px;
+    }
+    .item img{
+        height: 220px;
+    }
+    #cajas2{
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        padding: 20px 0;
+    }
+    .resepcion, .eventos{
+        position: static;
+        width: 90%;
+        height: 300px;
+        margin: 10px 0;
+    }
+    #footer{
+        flex-direction: column;
+        height: auto;
+    }
+    .f1, .f2, .f3{
+        width: 100%;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .textf{
+        text-align: center;
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #logoheader{
+        width: 70px;
+        height: 70px;
+    }
+    #ccarne{
+        height: 350px;
+    }
+    .text2{
+        font-size: 24px;
+    }
+    #cajas .item{
+        width: 95%;
+    }
+    .item img{
+        height: 180px;
+    }
+    .resepcion, .eventos{
+        height: 220px;
+    }
+    #logofooter{
+        width: 130px;
+        height: 130px;
+    }
+    .derechos{
+        font-size: 12px;
+        text-align: center;
+        padding: 0 10px;
+    }
+}
